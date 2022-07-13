@@ -183,6 +183,15 @@ main {
   }
 }
 
+@media only screen and (max-width: 920px) {
+  main {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    border: 0;
+  }
+}
+
 @media only screen and (max-width: 760px) {
   main {
     width: 100%;
