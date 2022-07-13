@@ -25,7 +25,7 @@ body {
 }
 
 main {
-  width: 75%;
+  width: 80%;
   margin-inline: auto;
   border: 1px solid rgba(0, 0, 0, 0.9);
   border-radius: 20px;
@@ -128,18 +128,21 @@ main {
   color: #555555;
   font-weight: normal;
 }
-.position_highlights{
+
+.position_highlights {
   padding-left: 20px;
   list-style-type: disc;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .position_highlights li {
   margin-bottom: 10px;
   font-size: 16px;
   /*display: block;*/
 }
-.icons{
+
+.icons {
   width: 20px;
   height: 20px;
   overflow: hidden;
@@ -148,15 +151,18 @@ main {
   top: 3px;
   margin-right: 5px;
 }
-.icons img{
+
+.icons img {
   height: 100%;
 }
+
 @media print {
-  main{
+  main {
     width: 100%;
     padding: 0;
     border: none;
   }
+
   #soft_skills .skill_list li,
   #skills .skill_list li,
   #tools .tool_list li {
@@ -168,10 +174,51 @@ main {
     display: inline-block;
     margin-right: 5px;
   }
+
   #soft_skills .skill_list li:after,
   #skills .skill_list li:after,
   #tools .tool_list li:after {
     content: ",";
     position: absolute;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  main {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    border: 0;
+  }
+
+  #context_box{
+    flex-direction: column-reverse;
+  }
+  #skills_others,
+  #experience_section{
+    width: 100%;
+    padding: 20px 0 0;
+    border-top: 2px solid rgba(0, 0, 0, 1);
+  }
+  #experience_section{
+    border: none;
+  }
+  #header h1{
+    font-size: 24px;
+  }
+  .title{
+    font-size: 20px;
+  }
+  #soft_skills .skill_list li, #skills .skill_list li, #tools .tool_list li{
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+  .exp-1 .title, .exp-2 .title, .exp-3 .title,
+  .company{
+    font-size: 16px;
+  }
+  .position_highlights li,
+  p{
+    font-size: 14px;
   }
 }
